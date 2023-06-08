@@ -1,0 +1,31 @@
+<style>
+    body {
+        background-image: url(img/H1tz.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+<section class="px-5 py-4 rgba-white-strong rounded shadow">
+
+    <h2 class="h1-responsive font-weight-bold text-center">{{subject.Name}}</h2>
+    <p class="grey-text text-center w-responsive mx-auto mb-5"></p>
+
+    <div class="row">
+
+        <div class="col-lg-5 mb-lg-0 mb-5">
+            <img src="img/logos/{{subject.Logo}}" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 300px;">
+        </div>
+        <div class="col-lg-7 view overlay">
+            <h3>Bấm vào nút bên dưới để tiến hành kiểm tra</h3>
+            <img src="img/start.gif" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 150px;">
+            <a ng-click="test()">
+                <div class="mask waves-effect waves-light rgba-white-slight"></div>
+            </a>
+        </div>
+    </div>
+
+
+
+</section>

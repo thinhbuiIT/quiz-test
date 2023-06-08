@@ -1,0 +1,39 @@
+<style>
+    body {
+        background-image: url(img/H1tz.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+<section class="dark-grey-text text-center p-5 rgba-white-strong">
+
+    <h3 class="font-weight-bold mb-4 pb-2">Các Quiz Cơ Bản</h3>
+    <p class="w-responsive mx-auto mb-5">Luyện tập các câu hỏi</p>
+
+    <div class="row">
+
+        <div ng-repeat="sj in subjects| limitTo:4:cout" class="col-md-6 mb-4" style="min-height: 500px;">
+
+            <div class="view overlay rounded z-depth-1 d-flex justify-content-center white" style="background-image: url(img/H5tz.gif);background-position: center;background-repeat: repeat-x;background-size: 50%;">
+                <img src="img/logos/{{sj.Logo}}" class="img-fluid w-50" alt="Sample project image">
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+
+            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                <h4 class="font-weight-bold mb-3">{{sj.Name}}</h4>
+                <p>Bài thi gồm kiến thức đã học trong môn {{sj.Name}}</p>
+                <a href="#!viewtest/{{sj.Id}}" class="btn btn-success"> Chi tiết</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+        <button ng-click="prev()" class="btn btn-primary"><i class="fas fa-chevron-circle-left"></i></button>
+        <button ng-click="next()" class="btn btn-primary"><i class="fas fa-chevron-circle-right"></i></button>
+    </div>
+</section>
